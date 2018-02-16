@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nzp.pokedex.FilterActivity">
+
+    <SeekBar
+        android:id="@+id/seekBarAtk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/minAtkText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintTop_toTopOf="@+id/minAtkText"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minAtkText"
+        android:layout_marginBottom="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarDef"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/minDefText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintTop_toTopOf="@+id/minDefText"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minDefText"
+        android:layout_marginBottom="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarHP"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/minHPText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintTop_toTopOf="@+id/minHPText"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minHPText"
+        android:layout_marginBottom="0dp" />
+
+    <CheckBox
+        android:id="@+id/bugCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/serial4"
+        android:text="Bug"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minHPText"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/dragonCheckBox"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/minDefText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Min DEF: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/minAtkText" />
+
+    <TextView
+        android:id="@+id/minHPText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Min HP: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/minDefText" />
+
+    <TextView
+        android:id="@+id/minAtkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Min ATK: 0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <CheckBox
+        android:id="@+id/darkCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="@string/dark"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bugCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/dragonCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/dragon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/darkCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/electricCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="-8dp"
+        android:background="@color/serial1"
+        android:text="@string/electric"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dragonCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/fairyCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="0dp"
+        android:autofillHints="@color/accompany4"
+        android:background="@color/accompany8"
+        android:backgroundTint="@color/accompany4"
+        android:text="@string/fairy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electricCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/fightingCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/fighting"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fairyCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/fireCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/fire"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fightingCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/flyingCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_blue_bright"
+        android:backgroundTint="@color/accompany3"
+        android:text="@string/flying"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fireCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/ghostCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="-7dp"
+        android:text="@string/ghost"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flyingCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/grassCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/combinationTriSecondary"
+        android:text="@string/grass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/bugCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bugCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/groundCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/combinationPrimary"
+        android:text="@string/ground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/darkCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grassCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/iceCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-7dp"
+        android:background="@color/serial7"
+        android:text="@string/ice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/dragonCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groundCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/normalCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/serial2"
+        android:text="@string/normal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/electricCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iceCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/poisonCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-11dp"
+        android:background="@color/accompnay1"
+        android:text="@string/poison"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/fairyCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/psychicCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/accompany8"
+        android:text="@string/psychic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/fightingCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poisonCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/rockCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/accompany6"
+        android:text="@string/rock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/fireCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/psychicCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/steelCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/accompany7"
+        android:text="@string/steel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/flyingCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockCheckBox"/>
+
+    <CheckBox
+        android:id="@+id/waterCheckBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/water"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/ghostCheckBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steelCheckBox"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <CheckBox
+        android:id="@+id/checkAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997"
+        android:layout_marginLeft="-7dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_choices"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/checkAll"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/checkAll"
+        android:layout_marginTop="0dp"
+        app:layout_constraintVertical_bias="0.695"/>
+
+</android.support.constraint.ConstraintLayout>

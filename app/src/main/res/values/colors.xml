@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#6a7aa5</color>
+    <color name="combinationPrimary">#e9c36b</color>
+    <color name="combinationCoPrimary">#7A1EA1</color>
+    <color name="combinationTriPrimary">#691A99</color>
+    <color name="combinationSecondary">#68EFAD</color>
+    <color name="combinationCoSecondary">#b4f53a</color>
+    <color name="combinationTriSecondary">#5ff086</color>
+    <color name="accompnay1">#9575CD</color>
+    <color name="acoompany2">#a16872</color>
+    <color name="accompany3">#bfe0f1</color>
+    <color name="accompany4">#B388FF</color>
+    <color name="accompany5">#673AB7</color>
+    <color name="accompany6">#aa8f75</color>
+    <color name="accompany7">#807e86</color>
+    <color name="accompany8">#F8BBD0</color>
+    <color name="serial1">#F4FF81</color>
+    <color name="serial2">#fee557</color>
+    <color name="serial3">#C6FF00</color>
+    <color name="serial4">#AEEA00</color>
+    <color name="serial5">#B2FF59</color>
+    <color name="serial6">#76FF03</color>
+    <color name="serial7">#55a9ea</color>
+
+</resources>
