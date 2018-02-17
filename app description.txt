@@ -1,0 +1,9 @@
+We have created a simple pokedex app for people to use to search for specific kinds of pokemons, depending on their attributes.
+
+You can search pokemon by their type, minimum attack points, minimum defense points, minimum health points, pokemon name and pokemon number.
+
+There is also a random button which would display 20 random pokemon.
+
+Otherwise, after the criteria has been selected, the app should move to a screen that displays the list of all relevant pokemon.
+
+From there, you can choose whichever pokemon you want to view from the search results page, and it should go to a detailed screen that displays the poekmons name, number, picture and all the available statistics.
